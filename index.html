@@ -17,26 +17,31 @@
 </head>
 
 <body>
-    <nav class="nav row bg-black navbar navbar-expand-lg ps-5 text-white text-decoration-none font-awesome navbar-dotted">
-        <div class="col">
-                <a href="index.html">
-                    <img src="icons/logo.png" alt="Blossom D. Logo" class="nav-logos">
-                </a>
-        </div>
-        <div class="nav menu-btn col justify-content-center text-white dropdown">
-                        <ul class="navbar-nav text-white justify-content-between text-decoration-none">
-                <li class="nav-link dropdown-item"><a href="#home">Home</a></li>
-                <li class="nav-link dropdown-item"><a href="#about">About Me</a></li>
-                <li class="nav-link dropdown-item"><a href="#portfolio">Portfolio</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="icons/logo.png" alt="Blossom D. Logo" class="nav-logos">
+          </a>
+      
+          <!-- Hamburger for small screens -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon bg-black small"></span>
+          </button>
+      
+          <!-- Nav items -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="navbar col justify-content-end pe-5">
-            <a class="text-white text-decoration-none" href="#contact">
-                Contact Me
-            </a>
-        </div>
-    </nav>
+      </nav>
 
 <section id="home ">  
     <div class="homer mt-0">
@@ -132,9 +137,6 @@
             </div>
         
         </div>
-        
-
-
         <div class="container">  
             <div class="row portfolio2 ">
                 <div class="col-md-4">
